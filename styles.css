@@ -16,20 +16,51 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 72px;
     padding: 1rem;
     background-color: var(--color-principal);
     color: white;
     position: relative;
 }
 
+
+.logo img {
+    z-index: 1;
+}
+
+.navbar-custom {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-custom {
+    position: absolute; /* o position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #06344c;
+}
+
+
+.nav-item {
+    position: relative;
+    z-index: 3;
+}
+
+  .navbar-custom .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+ 
+
 .logo img {
     width: auto;
-    height: calc(100% - 2rem);
+    height: calc(5rem);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.6);
 }
 
 nav {
@@ -39,12 +70,13 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 nav ul li a {
@@ -52,12 +84,13 @@ nav ul li a {
     padding: 0.5rem 1rem;
     text-decoration: none;
     color: white;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
 }
 
 nav ul li a:hover {
-    background-color: var(--color-secundario);
+    background-color: var(white) opacity(0.2);
 }
+
 
 .carousel {
     position: relative;
@@ -83,41 +116,6 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-.circulos-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-  
-.circulo {
-    position: relative;
-}
-  
-.circulo-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--color-principal);
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-  
-.servicio-info {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid var(--color-principal);
-    width: 300px;
-    z-index: 1;
-}
 
 #banner {
     padding: 2rem;
@@ -184,4 +182,12 @@ footer {
 
 .carousel-indicators li.active {
     background-color: rgba(255, 255, 255, 1);
+}
+
+.btn-white {
+    background-color: white;
+}
+
+.btn-white:hover {
+    color: white;
 }

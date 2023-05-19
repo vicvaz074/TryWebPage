@@ -67,3 +67,4 @@ $('.carousel').on('slide.bs.carousel', function() {
   var carouselHeight = $('.carousel-item.active img').height();
   $('#carousel-indicators').css('bottom', (carouselHeight + 10) + 'px');
 });
+
