@@ -140,3 +140,48 @@ footer {
     color: white;
     text-align: center;
 }
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.expand-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.expand-icon:hover{
+    color: #ddd;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators li.active {
+    background-color: rgba(255, 255, 255, 1);
+}
